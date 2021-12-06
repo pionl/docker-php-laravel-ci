@@ -11,6 +11,7 @@
         "docker": {
           "php": "7.4",
           "node": "14.18.2",
+          "npm": "8.1.3",
           "composer": "2.1.14"
         }
       },
@@ -19,6 +20,7 @@
         "docker": {
           "php": "7.4",
           "node": "10.24.1",
+          "npm": "6.14.12",
           "composer": "2.1.14"
         }
       },
@@ -27,6 +29,7 @@
         "docker": {
           "php": "7.2",
           "node": "14.18.2",
+          "npm": "8.1.3",
           "composer": "2.1.14"
         }
       },
@@ -35,6 +38,7 @@
         "docker": {
           "php": "7.2",
           "node": "14.18.2",
+          "npm": "8.1.3",
           "composer": "1.10.16"
         }
       }
@@ -53,6 +57,6 @@
   "author": "Martin Kluska <martin@kluska.cz",
   "license": "MIT",
   "dependencies": {
-    "wf-docker": "1.0.1"
+    "wf-docker": "1.0.2"
   }
 }

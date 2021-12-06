@@ -13,7 +13,8 @@ RUN mkdir $NVM_DIR \
     && $NVM_DIR/nvm.sh \
     && ln -sf /root/.nvm/versions/node/v$NODE_VERSION/bin/node /usr/bin/nodejs \
     && ln -sf /root/.nvm/versions/node/v$NODE_VERSION/bin/node /usr/bin/node \
-    && ln -sf /root/.nvm/versions/node/v$NODE_VERSION/bin/npm /usr/bin/npm
+    && ln -sf /root/.nvm/versions/node/v$NODE_VERSION/bin/npm /usr/bin/npm \
+    && npm install -g npm@6.14.12 -f
 
 
 # Install shared php setup
