@@ -1,0 +1,58 @@
+{
+  "name": "docker-php-laravel-ci",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Docker image for Laravel stack (for CI environment)",
+  "wf-docker": {
+    "image": "pionl/docker-php-laravel-ci",
+    "tags": [
+      {
+        "tag": "7.4-node-14",
+        "docker": {
+          "php": "7.4",
+          "node": "14.18.2",
+          "composer": "2.1.14"
+        }
+      },
+      {
+        "tag": "7.4-node-10",
+        "docker": {
+          "php": "7.4",
+          "node": "10.24.1",
+          "composer": "2.1.14"
+        }
+      },
+      {
+        "tag": "7.2-node-14-composer-2",
+        "docker": {
+          "php": "7.2",
+          "node": "14.18.2",
+          "composer": "2.1.14"
+        }
+      },
+      {
+        "tag": "7.2-node-14-composer-1",
+        "docker": {
+          "php": "7.2",
+          "node": "14.18.2",
+          "composer": "1.10.16"
+        }
+      }
+    ],
+    "run": [
+      "node --version",
+      "npm --version",
+      "php --version"
+    ]
+  },
+  "scripts": {
+    "build": "./node_modules/.bin/wf-docker build",
+    "build-push": "./node_modules/.bin/wf-docker build-push",
+    "push": "./node_modules/.bin/wf-docker push"
+  },
+  "author": "Martin Kluska <martin@kluska.cz",
+  "license": "MIT",
+  "dependencies": {
+    "wf-docker": "1.0.1"
+  }
+}
