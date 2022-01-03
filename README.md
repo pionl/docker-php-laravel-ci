@@ -19,14 +19,17 @@ image: pionl/docker-php-laravel-ci:7.2
 ### Tags
 
 ![https://github.com/pionl/docker-php-laravel-ci](https://img.shields.io/github/license/pionl/docker-php-laravel-ci?style=flat-square)
-![](https://img.shields.io/docker/pulls/pionl/docker-php-laravel-ci?style=flat-square) ![](https://img.shields.io/docker/stars/pionl/docker-php-laravel-ci?style=flat-square)
-
 Image | Badges
  --- | ---
-**pionl/docker-php-laravel-ci:7.4-node-14** | ![](https://img.shields.io/docker/image-size/pionl/docker-php-laravel-ci/7.4-node-14?style=flat-square)
-**pionl/docker-php-laravel-ci:7.4-node-10** | ![](https://img.shields.io/docker/image-size/pionl/docker-php-laravel-ci/7.4-node-10?style=flat-square)
-**pionl/docker-php-laravel-ci:7.2-node-14-composer-2** | ![](https://img.shields.io/docker/image-size/pionl/docker-php-laravel-ci/7.2-node-14-composer-2?style=flat-square)
-**pionl/docker-php-laravel-ci:7.2-node-14-composer-1** | ![](https://img.shields.io/docker/image-size/pionl/docker-php-laravel-ci/7.2-node-14-composer-1?style=flat-square)
+**pionl/docker-php-laravel-ci:8.1-node-17** | ![](https://img.shields.io/microbadger/layers/pionl/docker-php-laravel-ci:8.1-node-17?style=flat-square) ![](https://img.shields.io/microbadger/image-size/pionl/docker-php-laravel-ci:8.1-node-17?style=flat-square)
+**pionl/docker-php-laravel-ci:8.0-node-17** | ![](https://img.shields.io/microbadger/layers/pionl/docker-php-laravel-ci:8.0-node-17?style=flat-square) ![](https://img.shields.io/microbadger/image-size/pionl/docker-php-laravel-ci:8.0-node-17?style=flat-square)
+**pionl/docker-php-laravel-ci:7.4-node-17** | ![](https://img.shields.io/microbadger/layers/pionl/docker-php-laravel-ci:7.4-node-17?style=flat-square) ![](https://img.shields.io/microbadger/image-size/pionl/docker-php-laravel-ci:7.4-node-17?style=flat-square)
+**pionl/docker-php-laravel-ci:7.4-node-14** | ![](https://img.shields.io/microbadger/layers/pionl/docker-php-laravel-ci:7.4-node-14?style=flat-square) ![](https://img.shields.io/microbadger/image-size/pionl/docker-php-laravel-ci:7.4-node-14?style=flat-square)
+**pionl/docker-php-laravel-ci:7.4-node-10** | ![](https://img.shields.io/microbadger/layers/pionl/docker-php-laravel-ci:7.4-node-10?style=flat-square) ![](https://img.shields.io/microbadger/image-size/pionl/docker-php-laravel-ci:7.4-node-10?style=flat-square)
+**pionl/docker-php-laravel-ci:7.2-node-17** | ![](https://img.shields.io/microbadger/layers/pionl/docker-php-laravel-ci:7.2-node-17?style=flat-square) ![](https://img.shields.io/microbadger/image-size/pionl/docker-php-laravel-ci:7.2-node-17?style=flat-square)
+**pionl/docker-php-laravel-ci:7.2-node-17-composer-1** | ![](https://img.shields.io/microbadger/layers/pionl/docker-php-laravel-ci:7.2-node-17-composer-1?style=flat-square) ![](https://img.shields.io/microbadger/image-size/pionl/docker-php-laravel-ci:7.2-node-17-composer-1?style=flat-square)
+**pionl/docker-php-laravel-ci:7.2-node-14** | ![](https://img.shields.io/microbadger/layers/pionl/docker-php-laravel-ci:7.2-node-14?style=flat-square) ![](https://img.shields.io/microbadger/image-size/pionl/docker-php-laravel-ci:7.2-node-14?style=flat-square)
+**pionl/docker-php-laravel-ci:7.2-node-14-composer-1** | ![](https://img.shields.io/microbadger/layers/pionl/docker-php-laravel-ci:7.2-node-14-composer-1?style=flat-square) ![](https://img.shields.io/microbadger/image-size/pionl/docker-php-laravel-ci:7.2-node-14-composer-1?style=flat-square)
 
 
 ## Built With
