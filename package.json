@@ -102,6 +102,6 @@
   "author": "Martin Kluska <martin@kluska.cz",
   "license": "MIT",
   "dependencies": {
-    "wf-docker": "1.0.2"
+    "wf-docker": "1.0.3"
   }
 }
