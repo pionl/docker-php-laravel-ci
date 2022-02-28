@@ -29,8 +29,7 @@ image: --IMAGE_NAME--:7.2
 * Composer v1 (only 7.2) / v2
 * rsync
 * git + open-ssh
-* pecl: xdebug, redis
-* PHP modules: pdo_mysql zip tokenizer xml json ctype mbstring intl exif pgsql calendar
+* PHP modules: ctype redis pdo pdo_mysql gd exif mbstring json xml tokenizer xdebug imagick opcache pcov
 
 ## Find Us
 

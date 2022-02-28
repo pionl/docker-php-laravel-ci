@@ -28,8 +28,8 @@ RUN curl -sS https://getcomposer.org/installer | \
     php -- --install-dir=/usr/local/bin/ --filename=composer --version=$COMPOSER_VERSION
 
 
-# Install rsync
-RUN apt-get update && apt-get install -y rsync && rm -r /var/lib/apt/lists/*
+# Install rsync and other tools
+RUN apt-get update && apt-get install -y rsync gdb && rm -r /var/lib/apt/lists/*
 
 COPY entrypoint.sh /entrypoint.sh
 ENTRYPOINT ["/entrypoint.sh"]
