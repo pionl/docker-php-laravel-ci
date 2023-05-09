@@ -1,9 +1,9 @@
-FROM php:8.2
+FROM php:8.1
 
 MAINTAINER Martin Kluska <martin@kluska.cz>
 
 ENV NVM_DIR /root/.nvm
-ENV NODE_VERSION 18.15.0
+ENV NODE_VERSION 18.16.0
 ENV COMPOSER_VERSION 2.5.5
 
 # Install Node.js
