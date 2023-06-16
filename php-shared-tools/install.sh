@@ -20,7 +20,7 @@ curl -L https://github.com/mlocati/docker-php-extension-installer/releases/lates
 chmod uga+x /usr/local/bin/install-php-extensions
 sync
 
-install-php-extensions ctype redis pdo pdo_mysql gd exif mbstring json xml tokenizer xdebug imagick opcache pcov
+install-php-extensions ctype redis pdo pdo_mysql gd exif mbstring json xml tokenizer xdebug imagick opcache pcov soap intl xsl
 
 php -m
 
