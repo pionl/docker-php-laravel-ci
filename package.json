@@ -7,6 +7,15 @@
     "image": "pionl/docker-php-laravel-ci",
     "tags": [
       {
+        "tag": "8.3-node-20",
+        "docker": {
+          "php": "8.3",
+          "node": "18.15.0",
+          "npm": "10.2",
+          "composer": "2.7.1"
+        }
+      },
+      {
         "tag": "8.2-node-20",
         "docker": {
           "php": "8.2",
