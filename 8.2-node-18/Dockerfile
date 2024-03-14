@@ -1,4 +1,4 @@
-FROM php:8.2
+FROM --platform=linux/amd64 php:8.2
 
 MAINTAINER Martin Kluska <martin@kluska.cz>
 

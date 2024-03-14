@@ -1,6 +1,6 @@
 # --DESCRIPTION--
 
-A docker image for your Laravel application with PHP.
+A docker image `linux/amd64` for your Laravel application with PHP.
 
 ## Usage
 

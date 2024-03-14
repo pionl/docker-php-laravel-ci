@@ -1,4 +1,4 @@
-FROM php:--php--
+FROM --platform=linux/amd64 php:--php--
 
 MAINTAINER Martin Kluska <martin@kluska.cz>
 

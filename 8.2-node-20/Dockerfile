@@ -1,10 +1,10 @@
-FROM php:8.2
+FROM --platform=linux/amd64 php:8.2
 
 MAINTAINER Martin Kluska <martin@kluska.cz>
 
 ENV NVM_DIR /root/.nvm
-ENV NODE_VERSION 18.15.0
-ENV COMPOSER_VERSION 2.7.1
+ENV NODE_VERSION 20.9.0
+ENV COMPOSER_VERSION 2.7.2
 
 # Install Node.js
 RUN mkdir $NVM_DIR \
