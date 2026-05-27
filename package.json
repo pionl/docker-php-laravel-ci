@@ -5,77 +5,89 @@
   "description": "Docker image for Laravel stack (for CI environment)",
   "wf-docker": {
     "image": "pionl/docker-php-laravel-ci",
+    "platforms": [
+      "linux/amd64"
+    ],
     "tags": [
+      {
+        "tag": "8.5-node-24",
+        "docker": {
+          "php": "8.5",
+          "node": "24.16.0",
+          "npm": "11.13.0",
+          "composer": "2.9.8"
+        }
+      },
+      {
+        "tag": "8.4-node-24",
+        "docker": {
+          "php": "8.4",
+          "node": "24.16.0",
+          "npm": "11.13.0",
+          "composer": "2.9.8"
+        }
+      },
       {
         "tag": "8.4-node-22",
         "docker": {
           "php": "8.4",
-          "node": "22.14.0",
-          "npm": "11.2.0",
-          "composer": "2.8.6"
+          "node": "22.22.3",
+          "npm": "10.9.8",
+          "composer": "2.9.8"
         }
       },
       {
         "tag": "8.3-node-22",
         "docker": {
           "php": "8.3",
-          "node": "22.14.0",
-          "npm": "11.2.0",
-          "composer": "2.8.6"
+          "node": "22.22.3",
+          "npm": "10.9.8",
+          "composer": "2.9.8"
         }
       },
       {
         "tag": "8.3-node-20",
         "docker": {
           "php": "8.3",
-          "node": "20.9.0",
-          "npm": "10.2",
-          "composer": "2.8.6"
+          "node": "20.20.2",
+          "npm": "10.8.2",
+          "composer": "2.9.8"
+        }
+      },
+      {
+        "tag": "8.2-node-24",
+        "docker": {
+          "php": "8.2",
+          "node": "24.16.0",
+          "npm": "11.13.0",
+          "composer": "2.9.8"
+        }
+      },
+      {
+        "tag": "8.2-node-22",
+        "docker": {
+          "php": "8.2",
+          "node": "22.22.3",
+          "npm": "10.9.8",
+          "composer": "2.9.8"
         }
       },
       {
         "tag": "8.2-node-20",
         "docker": {
           "php": "8.2",
-          "node": "20.9.0",
-          "npm": "10.2",
-          "composer": "2.7.2"
+          "node": "20.20.2",
+          "npm": "10.8.2",
+          "composer": "2.9.8"
         }
       },
       {
         "tag": "8.2-node-18",
         "docker": {
           "php": "8.2",
-          "node": "18.19.1",
-          "npm": "9.6",
-          "composer": "2.5.5"
-        }
-      },
-      {
-        "tag": "8.1-node-18",
-        "docker": {
-          "php": "8.1",
-          "node": "18.19.1",
-          "npm": "9.6",
-          "composer": "2.5.5"
-        }
-      },
-      {
-        "tag": "8.1-node-17",
-        "docker": {
-          "php": "8.1",
-          "node": "17.9.1",
-          "npm": "8.1.3",
-          "composer": "2.1.14"
-        }
-      },
-      {
-        "tag": "8.0-node-17",
-        "docker": {
-          "php": "8.0",
-          "node": "17.9.1",
-          "npm": "8.1.3",
-          "composer": "2.1.14"
+          "node": "18.20.8",
+          "npm": "10.8.2",
+          "composer": "2.9.8"
         }
       }
     ],
@@ -88,11 +100,18 @@
   "scripts": {
     "build": "./node_modules/.bin/wf-docker build",
     "build-push": "./node_modules/.bin/wf-docker build-push",
-    "push": "./node_modules/.bin/wf-docker push"
+    "push": "./node_modules/.bin/wf-docker push",
+    "update-versions": "tsx scripts/update-versions.ts"
   },
   "author": "Martin Kluska <martin@kluska.cz",
   "license": "MIT",
   "dependencies": {
     "wf-docker": "1.0.3"
+  },
+  "devDependencies": {
+    "@types/semver": "^7.5.8",
+    "semver": "^7.6.3",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.3"
   }
 }

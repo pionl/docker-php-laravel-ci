@@ -33,14 +33,15 @@ RUN install-php-extensions some-extension
 
 Image | Badges
  --- | ---
+**pionl/docker-php-laravel-ci:8.5-node-24** | ![](https://img.shields.io/docker/image-size/pionl/docker-php-laravel-ci/8.5-node-24?style=flat-square)
+**pionl/docker-php-laravel-ci:8.4-node-24** | ![](https://img.shields.io/docker/image-size/pionl/docker-php-laravel-ci/8.4-node-24?style=flat-square)
 **pionl/docker-php-laravel-ci:8.4-node-22** | ![](https://img.shields.io/docker/image-size/pionl/docker-php-laravel-ci/8.4-node-22?style=flat-square)
 **pionl/docker-php-laravel-ci:8.3-node-22** | ![](https://img.shields.io/docker/image-size/pionl/docker-php-laravel-ci/8.3-node-22?style=flat-square)
 **pionl/docker-php-laravel-ci:8.3-node-20** | ![](https://img.shields.io/docker/image-size/pionl/docker-php-laravel-ci/8.3-node-20?style=flat-square)
+**pionl/docker-php-laravel-ci:8.2-node-24** | ![](https://img.shields.io/docker/image-size/pionl/docker-php-laravel-ci/8.2-node-24?style=flat-square)
+**pionl/docker-php-laravel-ci:8.2-node-22** | ![](https://img.shields.io/docker/image-size/pionl/docker-php-laravel-ci/8.2-node-22?style=flat-square)
 **pionl/docker-php-laravel-ci:8.2-node-20** | ![](https://img.shields.io/docker/image-size/pionl/docker-php-laravel-ci/8.2-node-20?style=flat-square)
 **pionl/docker-php-laravel-ci:8.2-node-18** | ![](https://img.shields.io/docker/image-size/pionl/docker-php-laravel-ci/8.2-node-18?style=flat-square)
-**pionl/docker-php-laravel-ci:8.1-node-18** | ![](https://img.shields.io/docker/image-size/pionl/docker-php-laravel-ci/8.1-node-18?style=flat-square)
-**pionl/docker-php-laravel-ci:8.1-node-17** | ![](https://img.shields.io/docker/image-size/pionl/docker-php-laravel-ci/8.1-node-17?style=flat-square)
-**pionl/docker-php-laravel-ci:8.0-node-17** | ![](https://img.shields.io/docker/image-size/pionl/docker-php-laravel-ci/8.0-node-17?style=flat-square)
 
 
 ## Built With
@@ -102,6 +103,8 @@ Installed PHP modules: ctype redis pdo pdo_mysql gd exif mbstring json xml token
   1. Optionally build only desired image by running `./node_modules/.bin/wf-docker build 8.2-node-20`
 
 > See package.json scripts for advanced usage or [wf-docker](https://github.com/wrk-flow/wf-docker)
+
+For ensuring a latest version of each dependency run `npm run update-versions`
 
 ## License
 

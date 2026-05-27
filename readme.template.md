@@ -91,6 +91,8 @@ Installed PHP modules: ctype redis pdo pdo_mysql gd exif mbstring json xml token
 
 > See package.json scripts for advanced usage or [wf-docker](https://github.com/wrk-flow/wf-docker)
 
+For ensuring a latest version of each dependency run `npm run update-versions`
+
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.

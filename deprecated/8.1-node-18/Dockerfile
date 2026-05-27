@@ -3,8 +3,8 @@ FROM --platform=linux/amd64 php:8.1
 MAINTAINER Martin Kluska <martin@kluska.cz>
 
 ENV NVM_DIR /root/.nvm
-ENV NODE_VERSION 17.9.1
-ENV COMPOSER_VERSION 2.1.14
+ENV NODE_VERSION 18.19.1
+ENV COMPOSER_VERSION 2.5.5
 
 # Install Node.js
 RUN mkdir $NVM_DIR \
@@ -14,7 +14,7 @@ RUN mkdir $NVM_DIR \
     && ln -sf /root/.nvm/versions/node/v$NODE_VERSION/bin/node /usr/bin/nodejs \
     && ln -sf /root/.nvm/versions/node/v$NODE_VERSION/bin/node /usr/bin/node \
     && ln -sf /root/.nvm/versions/node/v$NODE_VERSION/bin/npm /usr/bin/npm \
-    && npm install -g npm@8.1.3 -f
+    && npm install -g npm@9.6 -f
 
 
 # Install shared php setup
@@ -30,6 +30,10 @@ RUN curl -sS https://getcomposer.org/installer | \
 
 # Install rsync and other tools
 RUN apt-get update && apt-get install -y rsync gdb && rm -r /var/lib/apt/lists/*
+
+# Fix Warning: PHP Startup: Invalid date.timezone value '', using 'UTC' instead in Unknown on line 0
+# BASH (cat: /etc/timezone: No such file or directory)
+RUN echo "UTC" >> /etc/timezone
 
 COPY entrypoint.sh /entrypoint.sh
 ENTRYPOINT ["/entrypoint.sh"]
